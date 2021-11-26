@@ -1,0 +1,65 @@
+    .grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+    .grow:hover { 
+    transform: scale(1.4); 
+    }
+    
+    body {
+      background-color: pink;
+      animation-duration: 10s;
+      animation-name: bodyanimation;
+    }
+    
+    @keyframes bodyanimation {
+      0%   {background-color: #F8D5EB;}
+      25%  {background-color: #21A8F6;}
+      50%  {background-color: #FFCA7A;}
+      75%  {background-color: #7ED957;}
+      100% {background-color: white;}
+    }
+    
+    #circle1 {
+      margin: 50px;
+      width: 100px;
+      height: 100px;
+      border: 1.9px solid;
+      border-radius: 30px; 
+      box-shadow: 0 0 20px #000000;
+      position: relative;
+      background-color: red;
+      animation-name: circle1animation;
+      animation-duration: 10s;
+    }
+    
+    @keyframes circle1animation {
+      0%   {background-color:red; left:0px; top:0px;}
+      25%  {background-color:yellow; left:200px; top:0px;}
+      50%  {background-color:blue; left:200px; top:200px;}
+      75%  {background-color:green; left:0px; top:200px;}
+      100% {background-color:red; left:0px; top:0px;}
+    }
+
+    #circle2 {
+      margin: 50px;
+      width: 100px;
+      height: 100px;
+      border: 1.9px solid;
+      border-radius: 30px; 
+      box-shadow: 0 0 20px #000000;
+      position: relative;
+      background-color: red;
+      animation-name: circle2animation;
+      animation-duration: 10s;
+    }
+    
+    @keyframes circle2animation {
+      0%   {background-color:pink; left:100px; top:60px;}
+      25%  {background-color:green; left:250px; top:0px;}
+      50%  {background-color:orange; left:300px; top:200px;}
+      75%  {background-color:yellow; left:0px; top:200px;}
+      100% {background-color:red; left:100px; top:0px;}
+    }
+    
+    
